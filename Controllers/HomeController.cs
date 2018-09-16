@@ -14,6 +14,13 @@ namespace NaveedDotNetPoc.Controllers
         {
             return View();
         }
+        
+        [Route("api/v0/myrestendpoint")]
+        [HttpGet]
+        public IActionResult GetApplicationConfigurationDetails()
+        {
+            return Ok("Hello From My REST Endpoint");
+        }
 
         public IActionResult About()
         {
